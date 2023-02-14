@@ -1,26 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 # Amadeo Salvador 2-14-23
 
 ###   Simple Python code to scale on numeral variables of dataset lipidomics 200 for LASSO analysis   ###
-
 # Lipidomics200 has HIPPA data, so it not available here.
-
-
-# In[ ]:
-
 
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-
-
-# In[ ]:
-
 
 # Concatenates the data1 and data2:
 data_combined= pd.concat([data1, data2], axis=1)
@@ -45,10 +30,3 @@ scaled_numeric_data = pd.DataFrame(scaled_numeric_data, columns=numeric_data.col
 # Combine the binary and scaled numeric data
 scaled_data_combined = pd.concat([scaled_numeric_data, binary_data,categ_data], axis=1)
 scaled_data_combined
-
-
-# In[ ]:
-
-
-
-
